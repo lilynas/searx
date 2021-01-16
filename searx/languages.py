@@ -69,5 +69,5 @@ language_codes = \
     ('uk-UA', 'Українська', '', 'Ukrainian'),
     ('vi-VN', 'Tiếng Việt', '', 'Vietnamese'),
     ('zh', '中文', '', 'Chinese'),
-    ('zh-CN', '中文', '中国', 'Chinese'),
-    ('zh-TW', '中文', '台灣', 'Chinese'))
+    ('zh-CN', '中文', '中国大陆', 'Chinese'),
+    ('zh-TW', '中文', '台湾地区', 'Chinese'))

@@ -15,12 +15,12 @@ brand:
 search:
     safe_search : 0 # Filter results. 0: None, 1: Moderate, 2: Strict
     autocomplete : "" # Existing autocomplete backends: "dbpedia", "duckduckgo", "google", "startpage", "swisscows", "qwant", "wikipedia" - leave blank to turn it off by default
-    default_lang : "" # Default search language - leave blank to detect from browser information or use codes from 'languages.py'
+    default_lang : "zh-CN" # Default search language - leave blank to detect from browser information or use codes from 'languages.py'
     ban_time_on_fail : 5 # ban time in seconds after engine errors
     max_ban_time_on_fail : 120 # max ban time in seconds after engine errors
 
 server:
-    port : 8888
+    port : 8899
     bind_address : "127.0.0.1" # address to listen on
     secret_key : "cdb5bafe709eaa0287ff6df3f07501d2" # change this!
     base_url : False # Set custom base_url. Possible values: False or "https://your.custom.host/location/"
@@ -115,7 +115,7 @@ checker:
         rosebud: &test_rosebud
           matrix:
               query: rosebud
-              lang: en
+              lang: zh-CN
           result_container:
               - not_empty
               - ['one_title_contains', 'citizen kane']

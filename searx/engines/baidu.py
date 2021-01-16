@@ -24,7 +24,7 @@ paging = True
 language_support = False
 
 # search-url
-base_url = 'https://www.baidu.com/'
+base_url = 'http://www.baidu.com/'
 search_string = 's?{query}&pn={offset}'
 
 """
@@ -44,7 +44,7 @@ def request(query, params):
 
     params['url'] = base_url + search_path
 
-    params['headers']['User-Agent'] = gen_useragent('Windows NT 6.3; WOW64')
+    params['headers']['User-Agent'] = 'Mozilla/5.0 (X11; Linux x86_64; rv:69.0) Gecko/20100101 Firefox/69.0'
 
     return params
 
